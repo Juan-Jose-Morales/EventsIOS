@@ -14,6 +14,9 @@
 		90F367C12974B89300B10E70 /* EventsIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F367C02974B89300B10E70 /* EventsIOSTests.swift */; };
 		90F367CB2974B89300B10E70 /* EventsIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F367CA2974B89300B10E70 /* EventsIOSUITests.swift */; };
 		90F367CD2974B89300B10E70 /* EventsIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F367CC2974B89300B10E70 /* EventsIOSUITestsLaunchTests.swift */; };
+		90F367DB2974C84300B10E70 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F367DA2974C84300B10E70 /* HomeScreenView.swift */; };
+		90F367DD2975D16700B10E70 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F367DC2975D16700B10E70 /* LoginScreenView.swift */; };
+		90F367DF2975D52F00B10E70 /* RegisterScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F367DE2975D52F00B10E70 /* RegisterScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		90F367C62974B89300B10E70 /* EventsIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F367CA2974B89300B10E70 /* EventsIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsIOSUITests.swift; sourceTree = "<group>"; };
 		90F367CC2974B89300B10E70 /* EventsIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		90F367DA2974C84300B10E70 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		90F367DC2975D16700B10E70 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		90F367DE2975D52F00B10E70 /* RegisterScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		90F367AE2974B89200B10E70 /* EventsIOS */ = {
 			isa = PBXGroup;
 			children = (
+				90F367D92974C70100B10E70 /* Screens */,
 				90F367AF2974B89200B10E70 /* EventsIOSApp.swift */,
 				90F367B12974B89200B10E70 /* ContentView.swift */,
 				90F367B32974B89300B10E70 /* Assets.xcassets */,
@@ -125,6 +132,16 @@
 				90F367CC2974B89300B10E70 /* EventsIOSUITestsLaunchTests.swift */,
 			);
 			path = EventsIOSUITests;
+			sourceTree = "<group>";
+		};
+		90F367D92974C70100B10E70 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				90F367DA2974C84300B10E70 /* HomeScreenView.swift */,
+				90F367DC2975D16700B10E70 /* LoginScreenView.swift */,
+				90F367DE2975D52F00B10E70 /* RegisterScreenView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F367DD2975D16700B10E70 /* LoginScreenView.swift in Sources */,
+				90F367DB2974C84300B10E70 /* HomeScreenView.swift in Sources */,
 				90F367B22974B89200B10E70 /* ContentView.swift in Sources */,
 				90F367B02974B89200B10E70 /* EventsIOSApp.swift in Sources */,
+				90F367DF2975D52F00B10E70 /* RegisterScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
