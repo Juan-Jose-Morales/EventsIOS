@@ -17,6 +17,10 @@
 		90F367DB2974C84300B10E70 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F367DA2974C84300B10E70 /* HomeScreenView.swift */; };
 		90F367DD2975D16700B10E70 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F367DC2975D16700B10E70 /* LoginScreenView.swift */; };
 		90F367DF2975D52F00B10E70 /* RegisterScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F367DE2975D52F00B10E70 /* RegisterScreenView.swift */; };
+		90F368272980306600B10E70 /* AgendaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F368262980306600B10E70 /* AgendaView.swift */; };
+		90F368292980334A00B10E70 /* NewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F368282980334A00B10E70 /* NewEventView.swift */; };
+		90F3682B2980342100B10E70 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3682A2980342100B10E70 /* Components.swift */; };
+		90F3683129803E5300B10E70 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3683029803E5300B10E70 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		90F367DA2974C84300B10E70 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		90F367DC2975D16700B10E70 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		90F367DE2975D52F00B10E70 /* RegisterScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenView.swift; sourceTree = "<group>"; };
+		90F368262980306600B10E70 /* AgendaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaView.swift; sourceTree = "<group>"; };
+		90F368282980334A00B10E70 /* NewEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventView.swift; sourceTree = "<group>"; };
+		90F3682A2980342100B10E70 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		90F3683029803E5300B10E70 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +108,10 @@
 		90F367AE2974B89200B10E70 /* EventsIOS */ = {
 			isa = PBXGroup;
 			children = (
+				90F367B12974B89200B10E70 /* ContentView.swift */,
+				90F3682D29803E3000B10E70 /* Data */,
 				90F367D92974C70100B10E70 /* Screens */,
 				90F367AF2974B89200B10E70 /* EventsIOSApp.swift */,
-				90F367B12974B89200B10E70 /* ContentView.swift */,
 				90F367B32974B89300B10E70 /* Assets.xcassets */,
 				90F367B52974B89300B10E70 /* Preview Content */,
 			);
@@ -139,9 +148,20 @@
 			children = (
 				90F367DA2974C84300B10E70 /* HomeScreenView.swift */,
 				90F367DC2975D16700B10E70 /* LoginScreenView.swift */,
+				90F3682A2980342100B10E70 /* Components.swift */,
+				90F368262980306600B10E70 /* AgendaView.swift */,
 				90F367DE2975D52F00B10E70 /* RegisterScreenView.swift */,
+				90F368282980334A00B10E70 /* NewEventView.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		90F3682D29803E3000B10E70 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				90F3683029803E5300B10E70 /* NetworkHelper.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,10 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F367DD2975D16700B10E70 /* LoginScreenView.swift in Sources */,
+				90F3683129803E5300B10E70 /* NetworkHelper.swift in Sources */,
+				90F3682B2980342100B10E70 /* Components.swift in Sources */,
 				90F367DB2974C84300B10E70 /* HomeScreenView.swift in Sources */,
+				90F368272980306600B10E70 /* AgendaView.swift in Sources */,
 				90F367B22974B89200B10E70 /* ContentView.swift in Sources */,
 				90F367B02974B89200B10E70 /* EventsIOSApp.swift in Sources */,
 				90F367DF2975D52F00B10E70 /* RegisterScreenView.swift in Sources */,
+				90F368292980334A00B10E70 /* NewEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EventsIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = H8ZVN55RGH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -465,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EventsIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = H8ZVN55RGH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
