@@ -157,6 +157,7 @@ extension RegisterScreenView{
                 .padding(.top,20)
             
         }
+        //realizamos la navegacion hacia el destino que queremos y le pasamos la comprobacion creada en la aprte superior
         .background(
             NavigationLink(destination: AgendaView(), isActive: $shouldShowAgenda) {
                 EmptyView()

@@ -56,6 +56,7 @@ struct LoginScreenView: View{
                 
                 
                 .padding(.top ,20)
+                //Boton para crear una nueva cuenta en vez de no tenerla
                 HStack{
                     Text("Aun no tienes una cuenta? ")
                         .padding(.top, 25)
@@ -100,7 +101,7 @@ struct LoginScreenView: View{
         
     }
     
-    
+    //funcion para realizar el login pasamos url de api y diccionario con los campos que vamos a pasar a el servidor de la api
     func login(email: String, pass: String) {
         
         
